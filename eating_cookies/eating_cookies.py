@@ -6,10 +6,14 @@ import sys
 # a solution that is more efficient than the naive
 # recursive solution
 
+# creates a method that takes in a number and creates an empty cache.
+
 
 def eating_cookies(n, cache=None):
+    # the number is less than 0, return 0
     if n < 0:
         return 0
+    # if the number is equal to 0 it will return 1
     if n == 0:
         return 1
     elif cache and cache[n] > 0:
